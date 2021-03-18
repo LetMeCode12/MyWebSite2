@@ -1,0 +1,30 @@
+
+:root{
+    --chLen:0ch;
+    --chLenCnt:0;
+}
+
+.Console{
+    border-right: solid black 2px;
+    color: white;
+    font-size: 32px;
+    font-family: "Console";
+    width: 0ch;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: 8s write steps(var(--chLenCnt)) infinite, 1.5s cours infinite;
+}
+
+@keyframes write {
+    100%,30%{
+        width: var(--chLen);
+        max-width: max-content;
+    }
+}
+
+@keyframes cours {
+    50%{
+        border-right: solid rgba(0, 0, 0, 0) 2px;
+        
+    }
+}

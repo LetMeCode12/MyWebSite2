@@ -1,0 +1,28 @@
+.AboutMe{
+    background-image: url("../../Graphics/mysite.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position:center;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .Describe{
+        display: flex;
+        width: 75vw;
+        font-size: 24px;
+        &>div{
+            margin:0 1rem ;
+        }
+        p{
+            text-indent: 50px;
+            margin: 0;
+            padding: 0;
+        }
+        .Logo{
+            height: 20vh;
+        }
+    }
+    
+  }

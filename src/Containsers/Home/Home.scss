@@ -1,0 +1,15 @@
+.Home{
+    background-image: url("../../Graphics/home.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 100vh;
+    .Describe{
+        margin: 0 auto;
+        width: max-content;
+        top:15vh;
+        position: relative;
+        text-shadow: 5px 5px 10px black;
+        display: flex;
+    }
+}

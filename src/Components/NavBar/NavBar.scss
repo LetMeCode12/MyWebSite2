@@ -1,0 +1,27 @@
+.navbar {
+    position: relative;
+    top: 0;
+    background: rgba(56, 56, 56, 0.6);
+    .navbar-nav{
+        margin: 0 2rem 0 auto !important;
+    }
+    .navbar-brand{
+        display: flex;
+        align-items: center;
+    .Logo{
+        height: 1.7rem;
+        margin: 0 1rem 0 0;
+        padding: 0;
+    }
+    }
+
+    .nav-link{
+        cursor: pointer;
+    }
+    .dropdown-menu {
+        background: rgba(0, 0, 0, 0.5);
+        .dropdown-item {
+            color: white;
+        }
+    }
+}
