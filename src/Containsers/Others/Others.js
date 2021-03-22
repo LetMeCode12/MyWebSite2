@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import logoMocha from "../../Graphics/mocha.png";
-import logoCypress from "../../Graphics/cypress.png";
+import logoGit from "../../Graphics/git.png";
+import logoDocker from "../../Graphics/docker.png";
 
 
 import "./Others.scss"
@@ -11,15 +11,26 @@ class Others extends Component {
             <div className="Others">
                 <div className="Describe">
                     <div className="Sector">
-                        <p data-sal="slide-right"
+                        <img src={logoGit} data-sal="slide-right"
                             data-sal-delay="300"
                             data-sal-duration="1500"
-                            data-sal-easing="ease-out">Cypress.io jest to narzędzie do automatyzacji testów. Pisalem w nim testy e2e na potrzeby działania aplikacji w poprzedniej pracy.</p>
-                        <img src={logoCypress} data-sal="slide-left"
+                            data-sal-easing="ease-out" />
+                        <p data-sal="slide-left"
+                            data-sal-delay="300"
+                            data-sal-duration="1500"
+                            data-sal-easing="ease-out">Git to system kontroli wersji. Wykorzystywałem go za równo w pracy jak i w zastosowaniu uczelnianym do pracowania grupowego nad projektami oraz przechowywania projektów. Używałem zarówno Githuba jak i CodeCommit od AWS. </p>
+                    </div>
+                    <div className="Sector">
+                    <p data-sal="slide-right"
+                            data-sal-delay="300"
+                            data-sal-duration="1500"
+                            data-sal-easing="ease-out" >Docker to narzędzie służące do tworzenia, wdrażania oraz uruchamiania aplikcaji rozproszonych. Wykorzystywałem je głównie do wdrażania aplikacji na serverach VPS za pomocą DockerHub.</p>
+                    <img src={logoDocker} data-sal="slide-left"
                             data-sal-delay="300"
                             data-sal-duration="1500"
                             data-sal-easing="ease-out"/>
                     </div>
+
                 </div>
             </div>
 
