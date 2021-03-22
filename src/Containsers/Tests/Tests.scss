@@ -1,8 +1,8 @@
-.BackEnd {
-  background-image: url("../../Graphics/backend.png");
+.Tests {
+  background-image: url("../../Graphics/tests.jpg");
   background-position: center;
   background-size: cover;
-  background-attachment: scroll;
+  background-attachment: fixed;
   background-blend-mode: lighten;
   background-color: #00899b;
   width: 100%;
@@ -18,7 +18,6 @@
     flex-direction: column;
     justify-content: space-evenly;
     backdrop-filter: blur(5px);
-
     .Sector:nth-child(1){
       margin-top: 5rem;
     }

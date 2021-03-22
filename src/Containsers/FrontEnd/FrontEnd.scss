@@ -13,8 +13,13 @@
   .Describe {
     height: 100%;
     background: rgba(0,0,0,.2);
-    
-    .Sector:nth-child(1){
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    backdrop-filter: blur(5px);
+
+    .Sector:nth-child(1) {
       margin-top: 5rem;
     }
 

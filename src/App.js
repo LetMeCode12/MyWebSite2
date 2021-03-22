@@ -6,6 +6,8 @@ import Home from './Containsers/Home/Home';
 import sal from "sal.js";
 import FrontEnd from './Containsers/FrontEnd/FrontEnd';
 import BackEnd from './Containsers/BackEnd/BackEnd';
+import Tests from './Containsers/Tests/Tests';
+import Others from './Containsers/Others/Others';
 
 
 function App() {
@@ -24,13 +26,8 @@ function App() {
       <AboutMe/>
       <FrontEnd/>
       <BackEnd/>
-     
-      <div className="Tests">
-
-      </div>
-      <div className="Others">
-
-      </div>
+      <Tests/>
+      <Others/>
       <div className="Contact">
 
       </div>

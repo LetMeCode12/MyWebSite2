@@ -5,7 +5,6 @@ class Console extends Component{
     
     componentDidMount(){
         const {children} = this.props;
-        console.log("XDD",children.length)
         document.documentElement.style.setProperty('--chLen',`${children.length}ch`)
         document.documentElement.style.setProperty('--chLenCnt',`${children.length}`)
     }
