@@ -4,6 +4,11 @@ import './index.css';
 import App from './App';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
+import 'react-notifications/lib/notifications.css';
+
+
+
+require('dotenv').config();
 
 ReactDOM.render(
   <React.StrictMode>

@@ -1,0 +1,19 @@
+.Contact{
+    background-image: url("../../Graphics/contact.png");
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+    .FormContainer{
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-49%);
+        position: absolute;
+        width: 70vw;
+        backdrop-filter: blur(10px);
+        background: rgba(0, 0, 0, 0.2);
+        border: 1px black solid;
+        box-shadow: 0 0 10px black;
+        padding: 2rem;
+    }
+}

@@ -8,7 +8,8 @@ import FrontEnd from './Containsers/FrontEnd/FrontEnd';
 import BackEnd from './Containsers/BackEnd/BackEnd';
 import Tests from './Containsers/Tests/Tests';
 import Others from './Containsers/Others/Others';
-
+import Contact from './Containsers/Contact/Contact';
+import {NotificationContainer} from 'react-notifications';
 
 function App() {
 
@@ -28,9 +29,8 @@ function App() {
       <BackEnd/>
       <Tests/>
       <Others/>
-      <div className="Contact">
-
-      </div>
+      <Contact/>
+      <NotificationContainer/>
     </div>
   );
 }
