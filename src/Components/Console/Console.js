@@ -5,14 +5,14 @@ class Console extends Component{
     
     componentDidMount(){
         const {children} = this.props;
-        document.documentElement.style.setProperty('--chLen',`${children.length}ch`)
-        document.documentElement.style.setProperty('--chLenCnt',`${children.length}`)
+        this.MyConsole.style.setProperty('--chLen',`${children.length}ch`)
+        this.MyConsole.style.setProperty('--chLenCnt',`${children.length}`)
     }
 
     render(){
         const {children} = this.props;
         return(
-            <div className="Console" >
+            <div className="Console" ref={reff=>this.MyConsole = reff}>
                 {children}
             </div>
         );
