@@ -32,17 +32,19 @@ function validateEmail(email) {
 
 const sendEmail=({email="",content=""}={})=>{
     // console.log("Data:",JSON.stringify({email,content}))
-    fetch(`http://${process.env.REACT_APP_API_URL}/sendMail`,{
-        method:"POST",
-        headers:{
-            "Content-Type":"application/json"
-        },
-        body:JSON.stringify({email,content})
-    }).then(()=>{
-        console.log("Wysłano!")
-        NotificationManager.success("Pomyślnie wysłano","Wysłano");
-    }).catch((err)=>{
-        console.error("Error:",err);
-        NotificationManager.error("Wysyłanie nie powiodło się","Błąd");
+    fetch(`https://mailsenderns.herokuapp.com/sendMail`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ email, content }),
     })
+      .then(() => {
+        console.log("Wysłano!");
+        NotificationManager.success("Pomyślnie wysłano", "Wysłano");
+      })
+      .catch((err) => {
+        console.error("Error:", err);
+        NotificationManager.error("Wysyłanie nie powiodło się", "Błąd");
+      });
 }
